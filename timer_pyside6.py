@@ -5,6 +5,7 @@ from PySide6.QtCore import QTimer, Qt, QUrl
 from PySide6.QtGui import QFont, QIcon, QFontDatabase
 from PySide6.QtMultimedia import QSoundEffect
 from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QGridLayout, QSlider
+import os
 
 ##################
 ### MAIN CLASS ###
@@ -219,6 +220,11 @@ if __name__ == "__main__":
     icon = QIcon()
     icon.addFile("resources/images/icon.ico")
     pomodoro.setWindowIcon(icon)
+    if os.name == 'nt':
+            # This is needed to display the app icon on the taskbar on Windows 7
+            import ctypes
+            myappid = 'MyOrganization.MyGui.1.0.0' # arbitrary string
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
     #####################
     ### SOUND EFFECTS ###
     click_sound = QSoundEffect()
