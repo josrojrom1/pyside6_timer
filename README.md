@@ -1,4 +1,5 @@
 ## Pomodoro timer
+![image](https://github.com/josrojrom1/pyside6_timer/assets/32680720/cf0fb773-659a-416e-9241-155666da3019)
 
 Digital pomodoro style timer designed in Python which works for Linux and Windows. The project uses PySide6 module.
 
@@ -27,16 +28,16 @@ sudo python timer_pyside6.py
 Remember to use the `deactivate` command when you finish using the timer to exit virtual environment.
 
 # Available functions
+![image](https://github.com/josrojrom1/pyside6_timer/assets/32680720/98000a5b-0f90-41e9-89f2-030ec4295fb6)
 
 In the actual version of Pomodoro timer you can use the following functions:
 
-- Set time between 99:99 and 00:01 minutes
-- Set optional break time between 00:00 and 20:00 minutes
+- Set time between 00:01 and 60:00 minutes
+- Set optional break time between 00:00 and 30:00 minutes
 - Start timer
 - Stop timer
 - Resume timer
 - Reset timer
-- Change color theme
 
 <br/>
 <br/>
